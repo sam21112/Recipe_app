@@ -1,4 +1,4 @@
-Recipe Display App:-
+Recipe Display App:- Demo link- https://drive.google.com/file/d/1h2osk1XXcH9KHWRwrluxa8KXbSoDnF-D/view?usp=sharing
 
 This iOS app, built using SwiftUI, allows users to browse recipes from the "Desserts" category and view detailed information about each recipe, including ingredients and measurements. The app utilizes TheMealDB API to fetch the data.
 
@@ -34,7 +34,7 @@ C)Views
 Installation
 Clone the repository: 
  
-git clone https://your-repository-url
+git clone url
 cd your-project-directory
 Open the project in Xcode:
  
