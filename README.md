@@ -15,12 +15,20 @@ Project Structure
 The project is structured into several key components:
 
 A)Models
+
 1)Meal.swift: Defines the Meal struct that represents a simple meal summary.
+
 2)MealDetail.swift: Contains the MealDetail and MealInfo structs. MealInfo includes detailed information about a meal, including ingredients and their corresponding measurements.
+
 B)ViewModels
+
 1)RecipeViewModel.swift: Manages the fetching of data from TheMealDB API and holds the state of the meals and selected meal details, including search functionality.
+
 C)Views
+
+
 1)MealListView.swift: Displays a list of meals to the user. Users can tap on a meal to see more details and use the search bar to filter meals.
+
 2)MealDetailView.swift: Shows detailed information about a selected meal, including ingredients and instructions, with interactive animations for a smoother user experience.
 
 Installation
