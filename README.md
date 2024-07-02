@@ -1,4 +1,5 @@
-Recipe Display App
+Recipe Display App:-
+
 This iOS app, built using SwiftUI, allows users to browse recipes from the "Desserts" category and view detailed information about each recipe, including ingredients and measurements. The app utilizes TheMealDB API to fetch the data.
 
 Features
@@ -21,14 +22,13 @@ B)ViewModels
 C)Views
 1)MealListView.swift: Displays a list of meals to the user. Users can tap on a meal to see more details and use the search bar to filter meals.
 2)MealDetailView.swift: Shows detailed information about a selected meal, including ingredients and instructions, with interactive animations for a smoother user experience.
+
 Installation
-Clone the repository:
- 
+Clone the repository: 
  
 git clone https://your-repository-url
 cd your-project-directory
 Open the project in Xcode:
- 
  
 Open RecipeApp.xcodeproj in Xcode.
 Run the project:
@@ -41,5 +41,6 @@ Upon launching the app, users are presented with a list of dessert recipes. Tapp
 
 Enhancements and Additional Features
 
-Search Recipes: A search bar at the top of the MealListView allows users to type in keywords and filter the recipes accordingly.
-Animations: Subtle animations such as fade-in effects for list items and smooth transitions between views provide a polished and engaging user experience.
+->Search Recipes: A search bar at the top of the MealListView allows users to type in keywords and filter the recipes accordingly.
+
+->Animations: Subtle animations such as fade-in effects for list items and smooth transitions between views provide a polished and engaging user experience.
