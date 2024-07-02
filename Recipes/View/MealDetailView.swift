@@ -8,8 +8,11 @@ struct MealDetailView: View {
         VStack {
             if let meal = viewModel.selectedMealDetail {
                 ScrollView {
+                     
                     
                     VStack(alignment: .leading, spacing: 10) {
+                        Text(meal.strMeal)
+                            .font(.title)
                         // Headers
                         HStack {
                             Text("Ingredient")
@@ -58,5 +61,9 @@ struct MealDetailView: View {
         }
         .padding()
         .navigationTitle("Meal Details")
+        .onDisappear {
+                    // Resetting the selected meal detail when view disappears
+                    viewModel.selectedMealDetail = nil
+                }
     }
 }
