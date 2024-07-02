@@ -31,12 +31,14 @@ struct MealDetailView: View {
                             HStack {
                                 Text(ingredient)
                                     .frame(minWidth: 150, alignment: .leading)
+
                                 Spacer()
                                 Text(meal.measurements[index])
                                     .frame(minWidth: 50, alignment: .leading)
+
                             }
                             .padding(.vertical, 5)
-                            .background(Color.white)
+                             
                              
                             .padding(.horizontal)
                         }
@@ -45,7 +47,8 @@ struct MealDetailView: View {
                         
                         Text("Instructions:")
                             .font(.headline)
-                        Text(meal.strInstructions)
+                        Text(formatInstructions(meal.strInstructions))
+                                                   
 
                         
                     }
@@ -67,3 +70,11 @@ struct MealDetailView: View {
                 }
     }
 }
+func formatInstructions(_ instructions: String) -> String {
+    let normalizedNewlines = instructions.replacingOccurrences(of: "\n+", with: "\n", options: .regularExpression)
+
+     
+    return normalizedNewlines.replacingOccurrences(of: "(?<!\n)\n(?![\n])", with: "\n\n", options: .regularExpression)
+}
+
+
